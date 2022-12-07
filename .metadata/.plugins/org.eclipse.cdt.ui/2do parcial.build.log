@@ -1,0 +1,8 @@
+10:53:50 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+
+10:53:50 Build Finished. 0 errors, 0 warnings. (took 575ms)
+

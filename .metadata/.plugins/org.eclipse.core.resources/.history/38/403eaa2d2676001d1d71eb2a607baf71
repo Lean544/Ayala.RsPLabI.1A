@@ -1,0 +1,45 @@
+/*
+ * parser.c
+ *
+ *  Created on: 7 dic. 2022
+ *      Author: ayala
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include "LinkedList.h"
+#include "post.h"
+
+int parser_postFromText(FILE* pFile , LinkedList* pArrayListJugador)
+{
+	int retorno=-1,cantidad;
+	char bufferPost[6][200];
+	Post* unPost=NULL;
+
+	if(pFile!=NULL && pArrayListJugador!=NULL){
+
+		fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n]\n",bufferPost[0],bufferPost[1],bufferPost[2],
+				bufferPost[3],bufferPost[4],bufferPost[5]);
+
+		while(!feof(pFile))
+		{
+
+			cantidad=fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n]\n",bufferPost[0],bufferPost[1],
+					bufferPost[2],bufferPost[3],bufferPost[4],bufferPost[5]);
+			if(cantidad<6){
+				//jug_delete(unJugador);
+				unPost=NULL;
+				retorno=-1;
+				break;
+			}else{
+				unPost=jug_newParametros(bufferPost[0],bufferPost[1],bufferPost[2],
+						bufferPost[3],bufferPost[4],bufferPost[5]);
+				if(unPost!=NULL){
+					ll_add(pArrayListJugador,(Jugador*)unJugador);
+				}
+				retorno=0;
+			}
+		}
+
+	}
+    return retorno;
+}

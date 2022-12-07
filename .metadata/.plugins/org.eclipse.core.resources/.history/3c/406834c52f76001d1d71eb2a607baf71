@@ -1,0 +1,17 @@
+/*
+ * controller.h
+ *
+ *  Created on: 7 dic. 2022
+ *      Author: ayala
+ */
+
+#ifndef CONTROLLER_H_
+#define CONTROLLER_H_
+
+int controller_cargarPostsDesdeTexto(char* path , LinkedList* pArrayListPost);
+
+int controller_listarPost(LinkedList* pArrayListJugador,int pos);
+
+int controller_listarPosts(LinkedList* pArrayListJugador);
+
+#endif /* CONTROLLER_H_ */

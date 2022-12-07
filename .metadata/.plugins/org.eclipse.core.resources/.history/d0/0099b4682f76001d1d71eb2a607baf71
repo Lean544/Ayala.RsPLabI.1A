@@ -1,0 +1,107 @@
+/*
+ * controller.c
+ *
+ *  Created on: 7 dic. 2022
+ *      Author: ayala
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+#include "post.h"
+#include "LinkedList.h"
+#include "parser.h"
+#include "string.h"
+#include <unistd.h>
+
+int controller_cargarPostsDesdeTexto(char* path , LinkedList* pArrayListPost)
+{
+	int returnAux = 0;
+
+	if(path != NULL && pArrayListPost != NULL){
+
+		FILE* f = NULL;
+		f = fopen(path, "r");
+		if(f != NULL){
+			returnAux = parser_postFromText(f, pArrayListPost);
+		}
+		fclose(f);
+	}else{
+		printf("Error\n");
+	}
+
+    return returnAux;
+}
+
+int controller_listarPost(LinkedList* pArrayListJugador,int pos){
+	int retorno=0;
+	int anchoColumnasTexto=-20;
+	int anchoColumnasNumero=-20;
+
+	if(pArrayListJugador != NULL){
+		int TAM= ll_len(pArrayListJugador);
+		if(TAM >= 0){
+			/*	int id;
+	char user[30];
+	int likes;
+	int dislikes;
+	int followers;*/
+			int id;
+			char* user /*= NULL*/;
+			int likes;
+			int dislikes /*= NULL*/;
+			int followers;
+			Post* postAListar;
+
+			postAListar = ll_get(pArrayListJugador, pos);
+			post_getUser(postAListar,&user);
+			post_getId(postAListar,&id);
+			post_getLikes(postAListar,&likes);
+			post_getDislikes(postAListar,&dislikes);
+			post_getFollowers(postAListar,&followers);
+
+
+			printf("| %*d| %*d| %*s| %*d| %*d| %*d| \n"
+			,anchoColumnasNumero ,(pos+1),anchoColumnasNumero,id,
+			anchoColumnasTexto,user,anchoColumnasNumero,likes,
+			anchoColumnasTexto,dislikes,anchoColumnasTexto,followers);
+
+		}
+
+	}
+	return retorno;
+}
+
+int controller_listarPosts(LinkedList* pArrayListJugador)
+{
+	int retorno = 0;
+	int anchoColumnasTexto=-20;
+	int anchoColumnasNumero=-20;
+
+	if(pArrayListJugador != NULL){
+		int largo = ll_len(pArrayListJugador);
+		if(largo >= 0 ){
+			printf("| %*s| %*s| %*s| %*s| %*s| %*s|\n"
+			,anchoColumnasNumero, "#",anchoColumnasNumero,"ID",anchoColumnasTexto
+			,"User",anchoColumnasNumero,"Likes",anchoColumnasTexto,"Dislikes",anchoColumnasTexto,"Followers");
+			for(int i = 0; i < largo; i++){
+				controller_listarPost(pArrayListJugador,i);
+			}
+		}else{
+			printf("No posts para mostrar.\n");
+		}
+
+		retorno = 1;
+	}
+
+    return retorno;
+}
+
+int map (LinkedList* list){
+	int retorno=0;
+	int TAM=ll_len(list);
+
+	for(int i=0;i < TAM; i++){
+		Post* postAModificar=ll_get(list, i);
+	}
+	return retorno;
+}

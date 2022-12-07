@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+ Name        : 2do.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+
+int main(void) {
+	setbuf(stdout,NULL);
+	int menu;
+
+	do{
+		utn_getNumero(&menu,"Que desea hacer?\n1)Cargar Archivo\n2)Imprimir Lista\n3)Asignar estadisticas\n"
+				"4)Filtrar por mejores posteos\n5)Filtrar por haters\n6)Ordenar por cantidad de followers\n"
+				"7)Mostrar al usuario mas popular\n8)Salir","Error",1,8,5);
+
+	}while(menu!= 8);
+
+
+	return EXIT_SUCCESS;
+}

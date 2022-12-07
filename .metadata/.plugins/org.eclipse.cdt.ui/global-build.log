@@ -1,0 +1,1333 @@
+08:57:11 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_postFromText':
+..\src\parser.c:34:12: warning: implicit declaration of function 'jug_newParametros' [-Wimplicit-function-declaration]
+   34 |     unPost=jug_newParametros(bufferPost[0],bufferPost[1],bufferPost[2],
+      |            ^~~~~~~~~~~~~~~~~
+..\src\parser.c:34:11: warning: assignment to 'Post *' {aka 'struct <anonymous> *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   34 |     unPost=jug_newParametros(bufferPost[0],bufferPost[1],bufferPost[2],
+      |           ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+..\src\LinkedList.c:12:8: error: unknown type name 'Node'
+   12 | static Node* getNode(LinkedList* this, int nodeIndex);
+      |        ^~~~
+..\src\LinkedList.c:12:22: error: unknown type name 'LinkedList'
+   12 | static Node* getNode(LinkedList* this, int nodeIndex);
+      |                      ^~~~~~~~~~
+..\src\LinkedList.c:13:20: error: unknown type name 'LinkedList'
+   13 | static int addNode(LinkedList* this, int nodeIndex,void* pElement);
+      |                    ^~~~~~~~~~
+..\src\LinkedList.c:21:1: error: unknown type name 'LinkedList'
+   21 | LinkedList* ll_newLinkedList(void)
+      | ^~~~~~~~~~
+..\src\LinkedList.c: In function 'll_newLinkedList':
+..\src\LinkedList.c:24:5: error: unknown type name 'LinkedList'
+   24 |     LinkedList* this= NULL;
+      |     ^~~~~~~~~~
+..\src\LinkedList.c:25:13: error: 'LinkedList' undeclared (first use in this function); did you mean 'll_newLinkedList'?
+   25 |     this = (LinkedList*)malloc(sizeof(LinkedList));
+      |             ^~~~~~~~~~
+      |             ll_newLinkedList
+..\src\LinkedList.c:25:13: note: each undeclared identifier is reported only once for each function it appears in
+..\src\LinkedList.c:25:24: error: expected expression before ')' token
+   25 |     this = (LinkedList*)malloc(sizeof(LinkedList));
+      |                        ^
+..\src\LinkedList.c:28:11: error: request for member 'size' in something not a structure or union
+   28 |       this->size=0;
+      |           ^~
+..\src\LinkedList.c:29:11: error: request for member 'pFirstNode' in something not a structure or union
+   29 |       this->pFirstNode= NULL;
+      |           ^~
+..\src\LinkedList.c: At top level:
+..\src\LinkedList.c:42:12: error: unknown type name 'LinkedList'
+   42 | int ll_len(LinkedList* this)
+      |            ^~~~~~~~~~
+..\src\LinkedList.c:62:8: error: unknown type name 'Node'
+   62 | static Node* getNode(LinkedList* this, int nodeIndex)
+      |        ^~~~
+..\src\LinkedList.c:62:22: error: unknown type name 'LinkedList'
+   62 | static Node* getNode(LinkedList* this, int nodeIndex)
+      |                      ^~~~~~~~~~
+..\src\LinkedList.c:85:1: error: unknown type name 'Node'
+   85 | Node* test_getNode(LinkedList* this, int nodeIndex)
+      | ^~~~
+..\src\LinkedList.c:85:20: error: unknown type name 'LinkedList'
+   85 | Node* test_getNode(LinkedList* this, int nodeIndex)
+      |                    ^~~~~~~~~~
+..\src\LinkedList.c:101:20: error: unknown type name 'LinkedList'
+  101 | static int addNode(LinkedList* this, int nodeIndex, void* pElement)
+      |                    ^~~~~~~~~~
+..\src\LinkedList.c:134:18: error: unknown type name 'LinkedList'
+  134 | int test_addNode(LinkedList* this, int nodeIndex,void* pElement)
+      |                  ^~~~~~~~~~
+..\src\LinkedList.c:147:12: error: unknown type name 'LinkedList'
+  147 | int ll_add(LinkedList* this, void* pElement)
+      |            ^~~~~~~~~~
+..\src\LinkedList.c:166:14: error: unknown type name 'LinkedList'
+  166 | void* ll_get(LinkedList* this, int index)
+      |              ^~~~~~~~~~
+..\src\LinkedList.c:189:12: error: unknown type name 'LinkedList'
+  189 | int ll_set(LinkedList* this, int index,void* pElement)
+      |            ^~~~~~~~~~
+..\src\LinkedList.c:210:15: error: unknown type name 'LinkedList'
+  210 | int ll_remove(LinkedList* this,int index)
+      |               ^~~~~~~~~~
+..\src\LinkedList.c:238:14: error: unknown type name 'LinkedList'
+  238 | int ll_clear(LinkedList* this)
+      |              ^~~~~~~~~~
+..\src\LinkedList.c:266:25: error: unknown type name 'LinkedList'
+  266 | int ll_deleteLinkedList(LinkedList* this)
+      |                         ^~~~~~~~~~
+..\src\LinkedList.c:286:16: error: unknown type name 'LinkedList'
+  286 | int ll_indexOf(LinkedList* this, void* pElement)
+      |                ^~~~~~~~~~
+..\src\LinkedList.c:313:16: error: unknown type name 'LinkedList'
+  313 | int ll_isEmpty(LinkedList* this)
+      |                ^~~~~~~~~~
+..\src\LinkedList.c:336:13: error: unknown type name 'LinkedList'
+  336 | int ll_push(LinkedList* this, int index, void* pElement)
+      |             ^~~~~~~~~~
+..\src\LinkedList.c:352:14: error: unknown type name 'LinkedList'
+  352 | void* ll_pop(LinkedList* this,int index)
+      |              ^~~~~~~~~~
+..\src\LinkedList.c:369:17: error: unknown type name 'LinkedList'
+  369 | int ll_contains(LinkedList* this, void* pElement)
+      |                 ^~~~~~~~~~
+..\src\LinkedList.c:393:20: error: unknown type name 'LinkedList'
+  393 | int ll_containsAll(LinkedList* this,LinkedList* this2)
+      |                    ^~~~~~~~~~
+..\src\LinkedList.c:393:37: error: unknown type name 'LinkedList'
+  393 | int ll_containsAll(LinkedList* this,LinkedList* this2)
+      |                                     ^~~~~~~~~~
+..\src\LinkedList.c:429:1: error: unknown type name 'LinkedList'
+  429 | LinkedList* ll_subList(LinkedList* this,int from,int to)
+      | ^~~~~~~~~~
+..\src\LinkedList.c:429:24: error: unknown type name 'LinkedList'
+  429 | LinkedList* ll_subList(LinkedList* this,int from,int to)
+      |                        ^~~~~~~~~~
+..\src\LinkedList.c:453:1: error: unknown type name 'LinkedList'
+  453 | LinkedList* ll_clone(LinkedList* this)
+      | ^~~~~~~~~~
+..\src\LinkedList.c:453:22: error: unknown type name 'LinkedList'
+  453 | LinkedList* ll_clone(LinkedList* this)
+      |                      ^~~~~~~~~~
+..\src\LinkedList.c:469:13: error: unknown type name 'LinkedList'
+  469 | int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order)
+      |             ^~~~~~~~~~
+08:57:30 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\parser.o: in function `parser_postFromText':
+C:\Users\ayala\Desktop\2do parcial bauss\2do parcial\Debug/../src/parser.c:34: undefined reference to `jug_newParametros'
+collect2.exe: error: ld returned 1 exit status
+09:00:48 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\post.o" "..\\src\\post.c" 
+..\src\post.c:9:16: error: unknown type name 'Post'
+    9 | int post_setId(Post* this,int id){
+      |                ^~~~
+..\src\post.c:14:18: error: unknown type name 'Post'
+   14 | int post_setUser(Post* this,char* user){
+      |                  ^~~~
+..\src\post.c:20:1: error: unknown type name 'Post'
+   20 | Post* post_newParametros(char* idStr,char* nombreCompletoStr,char* edadStr, char* posicionStr, char* nacionalidadStr, char* idSelccionStr){
+      | ^~~~
+..\src\post.c: In function 'post_newParametros':
+..\src\post.c:22:2: error: unknown type name 'Post'
+   22 |  Post* pPost = (Post*)malloc(sizeof(Post));
+      |  ^~~~
+..\src\post.c:22:17: error: 'Post' undeclared (first use in this function); did you mean 'pPost'?
+   22 |  Post* pPost = (Post*)malloc(sizeof(Post));
+      |                 ^~~~
+      |                 pPost
+..\src\post.c:22:17: note: each undeclared identifier is reported only once for each function it appears in
+..\src\post.c:22:22: error: expected expression before ')' token
+   22 |  Post* pPost = (Post*)malloc(sizeof(Post));
+      |                      ^
+..\src\post.c:23:2: warning: implicit declaration of function 'post_setId' [-Wimplicit-function-declaration]
+   23 |  post_setId(pPost, atoi(idStr));
+      |  ^~~~~~~~~~
+..\src\post.c:23:20: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+   23 |  post_setId(pPost, atoi(idStr));
+      |                    ^~~~
+..\src\post.c:24:2: warning: implicit declaration of function 'jug_setNombreCompleto' [-Wimplicit-function-declaration]
+   24 |  jug_setNombreCompleto(pPost, nombreCompletoStr);
+      |  ^~~~~~~~~~~~~~~~~~~~~
+..\src\post.c:25:2: warning: implicit declaration of function 'jug_setEdad' [-Wimplicit-function-declaration]
+   25 |  jug_setEdad(pJugador, atoi(edadStr));
+      |  ^~~~~~~~~~~
+..\src\post.c:25:14: error: 'pJugador' undeclared (first use in this function)
+   25 |  jug_setEdad(pJugador, atoi(edadStr));
+      |              ^~~~~~~~
+..\src\post.c:26:2: warning: implicit declaration of function 'jug_setPosicion' [-Wimplicit-function-declaration]
+   26 |  jug_setPosicion(pJugador, posicionStr);
+      |  ^~~~~~~~~~~~~~~
+..\src\post.c:27:2: warning: implicit declaration of function 'jug_setNacionalidad' [-Wimplicit-function-declaration]
+   27 |  jug_setNacionalidad(pJugador, nacionalidadStr);
+      |  ^~~~~~~~~~~~~~~~~~~
+..\src\post.c:28:2: warning: implicit declaration of function 'jug_setIdSeleccion' [-Wimplicit-function-declaration]
+   28 |  jug_setIdSeleccion(pJugador, atoi(idSelccionStr));
+      |  ^~~~~~~~~~~~~~~~~~
+..\src\post.c:30:1: warning: control reaches end of non-void function [-Wreturn-type]
+   30 | }
+      | ^
+09:01:01 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\post.o" "..\\src\\post.c" 
+..\src\post.c: In function 'post_setUser':
+..\src\post.c:15:2: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   15 |  strcpy(this->user, user);
+      |  ^~~~~~
+..\src\post.c:15:2: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\src\post.c:8:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+    7 | #include"post.h"
+  +++ |+#include <string.h>
+    8 | 
+..\src\post.c: In function 'post_newParametros':
+..\src\post.c:22:23: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   22 |  Post* pPost = (Post*)malloc(sizeof(Post));
+      |                       ^~~~~~
+..\src\post.c:22:23: warning: incompatible implicit declaration of built-in function 'malloc'
+..\src\post.c:8:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+    7 | #include"post.h"
+  +++ |+#include <stdlib.h>
+    8 | 
+..\src\post.c:23:20: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+   23 |  post_setId(pPost, atoi(idStr));
+      |                    ^~~~
+..\src\post.c:24:2: warning: implicit declaration of function 'jug_setNombreCompleto' [-Wimplicit-function-declaration]
+   24 |  jug_setNombreCompleto(pPost, nombreCompletoStr);
+      |  ^~~~~~~~~~~~~~~~~~~~~
+..\src\post.c:25:2: warning: implicit declaration of function 'jug_setEdad' [-Wimplicit-function-declaration]
+   25 |  jug_setEdad(pJugador, atoi(edadStr));
+      |  ^~~~~~~~~~~
+..\src\post.c:25:14: error: 'pJugador' undeclared (first use in this function)
+   25 |  jug_setEdad(pJugador, atoi(edadStr));
+      |              ^~~~~~~~
+..\src\post.c:25:14: note: each undeclared identifier is reported only once for each function it appears in
+..\src\post.c:26:2: warning: implicit declaration of function 'jug_setPosicion' [-Wimplicit-function-declaration]
+   26 |  jug_setPosicion(pJugador, posicionStr);
+      |  ^~~~~~~~~~~~~~~
+..\src\post.c:27:2: warning: implicit declaration of function 'jug_setNacionalidad' [-Wimplicit-function-declaration]
+   27 |  jug_setNacionalidad(pJugador, nacionalidadStr);
+      |  ^~~~~~~~~~~~~~~~~~~
+..\src\post.c:28:2: warning: implicit declaration of function 'jug_setIdSeleccion' [-Wimplicit-function-declaration]
+   28 |  jug_setIdSeleccion(pJugador, atoi(idSelccionStr));
+      |  ^~~~~~~~~~~~~~~~~~
+..\src\post.c:30:1: warning: control reaches end of non-void function [-Wreturn-type]
+   30 | }
+      | ^
+09:01:25 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\post.o" "..\\src\\post.c" 
+..\src\post.c: In function 'post_newParametros':
+..\src\post.c:28:2: warning: implicit declaration of function 'jug_setNombreCompleto' [-Wimplicit-function-declaration]
+   28 |  jug_setNombreCompleto(pPost, nombreCompletoStr);
+      |  ^~~~~~~~~~~~~~~~~~~~~
+..\src\post.c:29:2: warning: implicit declaration of function 'jug_setEdad' [-Wimplicit-function-declaration]
+   29 |  jug_setEdad(pJugador, atoi(edadStr));
+      |  ^~~~~~~~~~~
+..\src\post.c:29:14: error: 'pJugador' undeclared (first use in this function)
+   29 |  jug_setEdad(pJugador, atoi(edadStr));
+      |              ^~~~~~~~
+..\src\post.c:29:14: note: each undeclared identifier is reported only once for each function it appears in
+..\src\post.c:30:2: warning: implicit declaration of function 'jug_setPosicion' [-Wimplicit-function-declaration]
+   30 |  jug_setPosicion(pJugador, posicionStr);
+      |  ^~~~~~~~~~~~~~~
+..\src\post.c:31:2: warning: implicit declaration of function 'jug_setNacionalidad' [-Wimplicit-function-declaration]
+   31 |  jug_setNacionalidad(pJugador, nacionalidadStr);
+      |  ^~~~~~~~~~~~~~~~~~~
+..\src\post.c:32:2: warning: implicit declaration of function 'jug_setIdSeleccion' [-Wimplicit-function-declaration]
+   32 |  jug_setIdSeleccion(pJugador, atoi(idSelccionStr));
+      |  ^~~~~~~~~~~~~~~~~~
+..\src\post.c:34:1: warning: control reaches end of non-void function [-Wreturn-type]
+   34 | }
+      | ^
+09:03:20 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\post.o" "..\\src\\post.c" 
+..\src\post.c: In function 'post_newParametros':
+..\src\post.c:44:2: warning: implicit declaration of function 'jug_setEdad' [-Wimplicit-function-declaration]
+   44 |  jug_setEdad(pJugador, atoi(edadStr));
+      |  ^~~~~~~~~~~
+..\src\post.c:44:14: error: 'pJugador' undeclared (first use in this function)
+   44 |  jug_setEdad(pJugador, atoi(edadStr));
+      |              ^~~~~~~~
+..\src\post.c:44:14: note: each undeclared identifier is reported only once for each function it appears in
+..\src\post.c:45:2: warning: implicit declaration of function 'jug_setPosicion' [-Wimplicit-function-declaration]
+   45 |  jug_setPosicion(pJugador, posicionStr);
+      |  ^~~~~~~~~~~~~~~
+..\src\post.c:46:2: warning: implicit declaration of function 'jug_setNacionalidad' [-Wimplicit-function-declaration]
+   46 |  jug_setNacionalidad(pJugador, nacionalidadStr);
+      |  ^~~~~~~~~~~~~~~~~~~
+..\src\post.c:47:2: warning: implicit declaration of function 'jug_setIdSeleccion' [-Wimplicit-function-declaration]
+   47 |  jug_setIdSeleccion(pJugador, atoi(idSelccionStr));
+      |  ^~~~~~~~~~~~~~~~~~
+..\src\post.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+   49 | }
+      | ^
+09:04:41 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\post.o" "..\\src\\post.c" 
+..\src\post.c: In function 'post_newParametros':
+..\src\post.c:44:2: warning: implicit declaration of function 'jug_setEdad' [-Wimplicit-function-declaration]
+   44 |  jug_setEdad(pJugador, atoi(edadStr));
+      |  ^~~~~~~~~~~
+..\src\post.c:44:14: error: 'pJugador' undeclared (first use in this function)
+   44 |  jug_setEdad(pJugador, atoi(edadStr));
+      |              ^~~~~~~~
+..\src\post.c:44:14: note: each undeclared identifier is reported only once for each function it appears in
+..\src\post.c:44:29: error: 'edadStr' undeclared (first use in this function); did you mean 'idStr'?
+   44 |  jug_setEdad(pJugador, atoi(edadStr));
+      |                             ^~~~~~~
+      |                             idStr
+..\src\post.c:45:2: warning: implicit declaration of function 'jug_setPosicion' [-Wimplicit-function-declaration]
+   45 |  jug_setPosicion(pJugador, posicionStr);
+      |  ^~~~~~~~~~~~~~~
+..\src\post.c:45:28: error: 'posicionStr' undeclared (first use in this function)
+   45 |  jug_setPosicion(pJugador, posicionStr);
+      |                            ^~~~~~~~~~~
+..\src\post.c:46:2: warning: implicit declaration of function 'jug_setNacionalidad' [-Wimplicit-function-declaration]
+   46 |  jug_setNacionalidad(pJugador, nacionalidadStr);
+      |  ^~~~~~~~~~~~~~~~~~~
+..\src\post.c:46:32: error: 'nacionalidadStr' undeclared (first use in this function)
+   46 |  jug_setNacionalidad(pJugador, nacionalidadStr);
+      |                                ^~~~~~~~~~~~~~~
+..\src\post.c:47:2: warning: implicit declaration of function 'jug_setIdSeleccion' [-Wimplicit-function-declaration]
+   47 |  jug_setIdSeleccion(pJugador, atoi(idSelccionStr));
+      |  ^~~~~~~~~~~~~~~~~~
+..\src\post.c:47:36: error: 'idSelccionStr' undeclared (first use in this function)
+   47 |  jug_setIdSeleccion(pJugador, atoi(idSelccionStr));
+      |                                    ^~~~~~~~~~~~~
+..\src\post.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+   49 | }
+      | ^
+09:05:17 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\post.o" "..\\src\\post.c" 
+..\src\post.c: In function 'post_newParametros':
+..\src\post.c:46:26: warning: passing argument 2 of 'post_setDislikes' makes integer from pointer without a cast [-Wint-conversion]
+   46 |  post_setDislikes(pPost, dislikes);
+      |                          ^~~~~~~~
+      |                          |
+      |                          char *
+..\src\post.c:18:37: note: expected 'int' but argument is of type 'char *'
+   18 | int post_setDislikes(Post* this,int dislikes){
+      |                                 ~~~~^~~~~~~~
+..\src\post.c:47:2: warning: implicit declaration of function 'jug_setNacionalidad' [-Wimplicit-function-declaration]
+   47 |  jug_setNacionalidad(pPost, );
+      |  ^~~~~~~~~~~~~~~~~~~
+..\src\post.c:47:29: error: expected expression before ')' token
+   47 |  jug_setNacionalidad(pPost, );
+      |                             ^
+..\src\post.c:48:2: warning: implicit declaration of function 'jug_setIdSeleccion' [-Wimplicit-function-declaration]
+   48 |  jug_setIdSeleccion(pJugador, atoi(idSelccionStr));
+      |  ^~~~~~~~~~~~~~~~~~
+..\src\post.c:48:21: error: 'pJugador' undeclared (first use in this function)
+   48 |  jug_setIdSeleccion(pJugador, atoi(idSelccionStr));
+      |                     ^~~~~~~~
+..\src\post.c:48:21: note: each undeclared identifier is reported only once for each function it appears in
+..\src\post.c:48:36: error: 'idSelccionStr' undeclared (first use in this function)
+   48 |  jug_setIdSeleccion(pJugador, atoi(idSelccionStr));
+      |                                    ^~~~~~~~~~~~~
+..\src\post.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+09:05:49 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\post.o" "..\\src\\post.c" 
+..\src\post.c: In function 'post_newParametros':
+..\src\post.c:48:9: error: 'pJugador' undeclared (first use in this function)
+   48 |  return pJugador;
+      |         ^~~~~~~~
+..\src\post.c:48:9: note: each undeclared identifier is reported only once for each function it appears in
+..\src\post.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+   49 | }
+      | ^
+09:05:59 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\post.o" "..\\src\\post.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\parser.o" "src\\post.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\parser.o: in function `parser_postFromText':
+C:\Users\ayala\Desktop\2do parcial bauss\2do parcial\Debug/../src/parser.c:34: undefined reference to `jug_newParametros'
+collect2.exe: error: ld returned 1 exit status
+09:07:15 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\post.o" "..\\src\\post.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_postFromText':
+..\src\parser.c:34:12: error: too many arguments to function 'post_newParametros'
+   34 |     unPost=post_newParametros(bufferPost[0],bufferPost[1],bufferPost[2],
+      |            ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\parser.c:10:
+..\src\post.h:30:7: note: declared here
+   30 | Post* post_newParametros(char* idStr,char* user,char* likes, char* dislikes, char* followers);
+      |       ^~~~~~~~~~~~~~~~~~
+09:07:51 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\parser.o" "src\\post.o" 
+09:09:17 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:13:39 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+..\src\2do parcial.c: In function 'main':
+..\src\2do parcial.c:19:2: error: unknown type name 'LinkedList'
+   19 |  LinkedList* listaPosts= ll_newLinkedList();
+      |  ^~~~~~~~~~
+..\src\2do parcial.c:19:26: warning: implicit declaration of function 'll_newLinkedList' [-Wimplicit-function-declaration]
+   19 |  LinkedList* listaPosts= ll_newLinkedList();
+      |                          ^~~~~~~~~~~~~~~~
+..\src\2do parcial.c:19:26: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+..\src\2do parcial.c:19:14: warning: unused variable 'listaPosts' [-Wunused-variable]
+   19 |  LinkedList* listaPosts= ll_newLinkedList();
+      |              ^~~~~~~~~~
+09:13:54 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+..\src\2do parcial.c: In function 'main':
+..\src\2do parcial.c:20:14: warning: unused variable 'listaPosts' [-Wunused-variable]
+   20 |  LinkedList* listaPosts= ll_newLinkedList();
+      |              ^~~~~~~~~~
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:15:51 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'controller_cargarPostsDesdeTexto':
+..\src\controller.c:19:21: error: 'pArrayListJugador' undeclared (first use in this function)
+   19 |  if(path != NULL && pArrayListJugador != NULL){
+      |                     ^~~~~~~~~~~~~~~~~
+..\src\controller.c:19:21: note: each undeclared identifier is reported only once for each function it appears in
+..\src\controller.c:23:16: warning: implicit declaration of function 'parser_JugadorFromText'; did you mean 'parser_postFromText'? [-Wimplicit-function-declaration]
+   23 |    returnAux = parser_JugadorFromText(f, pArrayListJugador);
+      |                ^~~~~~~~~~~~~~~~~~~~~~
+      |                parser_postFromText
+09:16:02 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+..\src\2do parcial.c: In function 'main':
+..\src\2do parcial.c:20:14: warning: unused variable 'listaPosts' [-Wunused-variable]
+   20 |  LinkedList* listaPosts= ll_newLinkedList();
+      |              ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'controller_cargarPostsDesdeTexto':
+..\src\controller.c:23:16: warning: implicit declaration of function 'parser_JugadorFromText'; did you mean 'parser_postFromText'? [-Wimplicit-function-declaration]
+   23 |    returnAux = parser_JugadorFromText(f, pArrayListPost);
+      |                ^~~~~~~~~~~~~~~~~~~~~~
+      |                parser_postFromText
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\controller.o: in function `controller_cargarPostsDesdeTexto':
+C:\Users\ayala\Desktop\2do parcial bauss\2do parcial\Debug/../src/controller.c:23: undefined reference to `parser_JugadorFromText'
+collect2.exe: error: ld returned 1 exit status
+09:16:23 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:17:19 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+..\src\2do parcial.c: In function 'main':
+..\src\2do parcial.c:27:5: warning: implicit declaration of function 'controller_cargarPostsDesdeTexto' [-Wimplicit-function-declaration]
+   27 |     controller_cargarPostsDesdeTexto("posts.csv" , listaPosts);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:17:58 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+Info: Nothing to build for 2do parcial
+09:25:49 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\post.o" "..\\src\\post.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'controller_listarPost':
+..\src\controller.c:51:4: error: 'jugadorAListar' undeclared (first use in this function)
+   51 |    jugadorAListar = ll_get(pArrayListJugador, pos);
+      |    ^~~~~~~~~~~~~~
+..\src\controller.c:51:4: note: each undeclared identifier is reported only once for each function it appears in
+..\src\controller.c:52:4: warning: implicit declaration of function 'jug_getId' [-Wimplicit-function-declaration]
+   52 |    jug_getId(jugadorAListar, &id);
+      |    ^~~~~~~~~
+..\src\controller.c:53:4: warning: implicit declaration of function 'jug_getNombreCompleto' [-Wimplicit-function-declaration]
+   53 |    jug_getNombreCompleto(jugadorAListar, nombre);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+..\src\controller.c:53:42: error: 'nombre' undeclared (first use in this function)
+   53 |    jug_getNombreCompleto(jugadorAListar, nombre);
+      |                                          ^~~~~~
+..\src\controller.c:54:4: warning: implicit declaration of function 'jug_getEdad'; did you mean 'utn_getEdad'? [-Wimplicit-function-declaration]
+   54 |    jug_getEdad(jugadorAListar, &edad);
+      |    ^~~~~~~~~~~
+      |    utn_getEdad
+..\src\controller.c:54:33: error: 'edad' undeclared (first use in this function)
+   54 |    jug_getEdad(jugadorAListar, &edad);
+      |                                 ^~~~
+..\src\controller.c:55:4: warning: implicit declaration of function 'jug_getPosicion' [-Wimplicit-function-declaration]
+   55 |    jug_getPosicion(jugadorAListar, posicion);
+      |    ^~~~~~~~~~~~~~~
+..\src\controller.c:55:36: error: 'posicion' undeclared (first use in this function)
+   55 |    jug_getPosicion(jugadorAListar, posicion);
+      |                                    ^~~~~~~~
+..\src\controller.c:56:4: warning: implicit declaration of function 'jug_getNacionalidad' [-Wimplicit-function-declaration]
+   56 |    jug_getNacionalidad(jugadorAListar, nacionalidad);
+      |    ^~~~~~~~~~~~~~~~~~~
+..\src\controller.c:56:40: error: 'nacionalidad' undeclared (first use in this function)
+   56 |    jug_getNacionalidad(jugadorAListar, nacionalidad);
+      |                                        ^~~~~~~~~~~~
+..\src\controller.c:57:4: warning: implicit declaration of function 'jug_getSIdSeleccion' [-Wimplicit-function-declaration]
+   57 |    jug_getSIdSeleccion(jugadorAListar, &idSeleccion);
+      |    ^~~~~~~~~~~~~~~~~~~
+..\src\controller.c:57:41: error: 'idSeleccion' undeclared (first use in this function)
+   57 |    jug_getSIdSeleccion(jugadorAListar, &idSeleccion);
+      |                                         ^~~~~~~~~~~
+..\src\controller.c:59:5: error: 'seleccion' undeclared (first use in this function)
+   59 |     seleccion = "NO CONVOCADO";
+      |     ^~~~~~~~~
+..\src\controller.c:61:5: warning: implicit declaration of function 'selec_seleccionPorId' [-Wimplicit-function-declaration]
+   61 |     selec_seleccionPorId(pArrayListSeleccion ,idSeleccion, &seleccion);
+      |     ^~~~~~~~~~~~~~~~~~~~
+..\src\controller.c:61:26: error: 'pArrayListSeleccion' undeclared (first use in this function)
+   61 |     selec_seleccionPorId(pArrayListSeleccion ,idSeleccion, &seleccion);
+      |                          ^~~~~~~~~~~~~~~~~~~
+..\src\controller.c:49:10: warning: unused variable 'postAListar' [-Wunused-variable]
+   49 |    Post* postAListar;
+      |          ^~~~~~~~~~~
+..\src\controller.c:48:8: warning: unused variable 'followers' [-Wunused-variable]
+   48 |    int followers;
+      |        ^~~~~~~~~
+..\src\controller.c:47:8: warning: unused variable 'dislikes' [-Wunused-variable]
+   47 |    int dislikes /*= NULL*/;
+      |        ^~~~~~~~
+..\src\controller.c:46:8: warning: unused variable 'likes' [-Wunused-variable]
+   46 |    int likes;
+      |        ^~~~~
+..\src\controller.c:45:10: warning: unused variable 'user' [-Wunused-variable]
+   45 |    char* user /*= NULL*/;
+      |          ^~~~
+..\src\controller.c: In function 'controller_listarPosts':
+..\src\controller.c:89:5: warning: implicit declaration of function 'controller_listarJugador'; did you mean 'controller_listarPosts'? [-Wimplicit-function-declaration]
+   89 |     controller_listarJugador(pArrayListJugador,i);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+      |     controller_listarPosts
+09:26:50 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'controller_listarPost':
+..\src\controller.c:52:4: warning: implicit declaration of function 'jug_getId' [-Wimplicit-function-declaration]
+   52 |    jug_getId(jugadorAListar, &id);
+      |    ^~~~~~~~~
+..\src\controller.c:52:14: error: 'jugadorAListar' undeclared (first use in this function)
+   52 |    jug_getId(jugadorAListar, &id);
+      |              ^~~~~~~~~~~~~~
+..\src\controller.c:52:14: note: each undeclared identifier is reported only once for each function it appears in
+..\src\controller.c:53:4: warning: implicit declaration of function 'jug_getNombreCompleto' [-Wimplicit-function-declaration]
+   53 |    jug_getNombreCompleto(jugadorAListar, nombre);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+..\src\controller.c:53:42: error: 'nombre' undeclared (first use in this function)
+   53 |    jug_getNombreCompleto(jugadorAListar, nombre);
+      |                                          ^~~~~~
+..\src\controller.c:54:4: warning: implicit declaration of function 'jug_getEdad'; did you mean 'utn_getEdad'? [-Wimplicit-function-declaration]
+   54 |    jug_getEdad(jugadorAListar, &edad);
+      |    ^~~~~~~~~~~
+      |    utn_getEdad
+..\src\controller.c:54:33: error: 'edad' undeclared (first use in this function)
+   54 |    jug_getEdad(jugadorAListar, &edad);
+      |                                 ^~~~
+..\src\controller.c:55:4: warning: implicit declaration of function 'jug_getPosicion' [-Wimplicit-function-declaration]
+   55 |    jug_getPosicion(jugadorAListar, posicion);
+      |    ^~~~~~~~~~~~~~~
+..\src\controller.c:55:36: error: 'posicion' undeclared (first use in this function)
+   55 |    jug_getPosicion(jugadorAListar, posicion);
+      |                                    ^~~~~~~~
+..\src\controller.c:56:4: warning: implicit declaration of function 'jug_getNacionalidad' [-Wimplicit-function-declaration]
+   56 |    jug_getNacionalidad(jugadorAListar, nacionalidad);
+      |    ^~~~~~~~~~~~~~~~~~~
+..\src\controller.c:56:40: error: 'nacionalidad' undeclared (first use in this function)
+   56 |    jug_getNacionalidad(jugadorAListar, nacionalidad);
+      |                                        ^~~~~~~~~~~~
+..\src\controller.c:57:4: warning: implicit declaration of function 'jug_getSIdSeleccion' [-Wimplicit-function-declaration]
+   57 |    jug_getSIdSeleccion(jugadorAListar, &idSeleccion);
+      |    ^~~~~~~~~~~~~~~~~~~
+..\src\controller.c:57:41: error: 'idSeleccion' undeclared (first use in this function)
+   57 |    jug_getSIdSeleccion(jugadorAListar, &idSeleccion);
+      |                                         ^~~~~~~~~~~
+..\src\controller.c:59:5: error: 'seleccion' undeclared (first use in this function)
+   59 |     seleccion = "NO CONVOCADO";
+      |     ^~~~~~~~~
+..\src\controller.c:61:5: warning: implicit declaration of function 'selec_seleccionPorId' [-Wimplicit-function-declaration]
+   61 |     selec_seleccionPorId(pArrayListSeleccion ,idSeleccion, &seleccion);
+      |     ^~~~~~~~~~~~~~~~~~~~
+..\src\controller.c:61:26: error: 'pArrayListSeleccion' undeclared (first use in this function)
+   61 |     selec_seleccionPorId(pArrayListSeleccion ,idSeleccion, &seleccion);
+      |                          ^~~~~~~~~~~~~~~~~~~
+..\src\controller.c:49:10: warning: variable 'postAListar' set but not used [-Wunused-but-set-variable]
+   49 |    Post* postAListar;
+      |          ^~~~~~~~~~~
+..\src\controller.c:48:8: warning: unused variable 'followers' [-Wunused-variable]
+   48 |    int followers;
+      |        ^~~~~~~~~
+..\src\controller.c:47:8: warning: unused variable 'dislikes' [-Wunused-variable]
+   47 |    int dislikes /*= NULL*/;
+      |        ^~~~~~~~
+..\src\controller.c:46:8: warning: unused variable 'likes' [-Wunused-variable]
+   46 |    int likes;
+      |        ^~~~~
+..\src\controller.c:45:10: warning: unused variable 'user' [-Wunused-variable]
+   45 |    char* user /*= NULL*/;
+      |          ^~~~
+..\src\controller.c: In function 'controller_listarPosts':
+..\src\controller.c:89:5: warning: implicit declaration of function 'controller_listarJugador'; did you mean 'controller_listarPosts'? [-Wimplicit-function-declaration]
+   89 |     controller_listarJugador(pArrayListJugador,i);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+      |     controller_listarPosts
+09:30:48 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'controller_listarPost':
+..\src\controller.c:53:4: warning: implicit declaration of function 'post_getLikes'; did you mean 'post_setLikes'? [-Wimplicit-function-declaration]
+   53 |    post_getLikes(postAListar,&likes);
+      |    ^~~~~~~~~~~~~
+      |    post_setLikes
+..\src\controller.c:54:4: warning: implicit declaration of function 'post_getDislikes'; did you mean 'post_setDislikes'? [-Wimplicit-function-declaration]
+   54 |    post_getDislikes(postAListar,&dislikes);
+      |    ^~~~~~~~~~~~~~~~
+      |    post_setDislikes
+..\src\controller.c:55:4: warning: implicit declaration of function 'post_getFollowers'; did you mean 'post_setFollowers'? [-Wimplicit-function-declaration]
+   55 |    post_getFollowers(postAListar,&followers);
+      |    ^~~~~~~~~~~~~~~~~
+      |    post_setFollowers
+..\src\controller.c:60:23: error: 'nombre' undeclared (first use in this function)
+   60 |    anchoColumnasTexto,nombre,anchoColumnasNumero,edad,
+      |                       ^~~~~~
+..\src\controller.c:60:23: note: each undeclared identifier is reported only once for each function it appears in
+..\src\controller.c:60:50: error: 'edad' undeclared (first use in this function)
+   60 |    anchoColumnasTexto,nombre,anchoColumnasNumero,edad,
+      |                                                  ^~~~
+..\src\controller.c:61:23: error: 'posicion' undeclared (first use in this function)
+   61 |    anchoColumnasTexto,posicion,anchoColumnasTexto,nacionalidad,
+      |                       ^~~~~~~~
+..\src\controller.c:61:51: error: 'nacionalidad' undeclared (first use in this function)
+   61 |    anchoColumnasTexto,posicion,anchoColumnasTexto,nacionalidad,
+      |                                                   ^~~~~~~~~~~~
+..\src\controller.c:62:24: error: 'seleccion' undeclared (first use in this function)
+   62 |    anchoColumnasTexto, seleccion);
+      |                        ^~~~~~~~~
+..\src\controller.c:45:10: warning: unused variable 'user' [-Wunused-variable]
+   45 |    char* user /*= NULL*/;
+      |          ^~~~
+..\src\controller.c: In function 'controller_listarPosts':
+..\src\controller.c:83:5: warning: implicit declaration of function 'controller_listarJugador'; did you mean 'controller_listarPosts'? [-Wimplicit-function-declaration]
+   83 |     controller_listarJugador(pArrayListJugador,i);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+      |     controller_listarPosts
+09:31:10 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'controller_listarPost':
+..\src\controller.c:49:4: error: unknown type name 'Post'
+   49 |    Post* postAListar;
+      |    ^~~~
+..\src\controller.c:52:4: warning: implicit declaration of function 'post_getId' [-Wimplicit-function-declaration]
+   52 |    post_getId(postAListar,&id);
+      |    ^~~~~~~~~~
+..\src\controller.c:53:4: warning: implicit declaration of function 'post_getLikes' [-Wimplicit-function-declaration]
+   53 |    post_getLikes(postAListar,&likes);
+      |    ^~~~~~~~~~~~~
+..\src\controller.c:54:4: warning: implicit declaration of function 'post_getDislikes' [-Wimplicit-function-declaration]
+   54 |    post_getDislikes(postAListar,&dislikes);
+      |    ^~~~~~~~~~~~~~~~
+..\src\controller.c:55:4: warning: implicit declaration of function 'post_getFollowers' [-Wimplicit-function-declaration]
+   55 |    post_getFollowers(postAListar,&followers);
+      |    ^~~~~~~~~~~~~~~~~
+..\src\controller.c:60:23: error: 'nombre' undeclared (first use in this function)
+   60 |    anchoColumnasTexto,nombre,anchoColumnasNumero,edad,
+      |                       ^~~~~~
+..\src\controller.c:60:23: note: each undeclared identifier is reported only once for each function it appears in
+..\src\controller.c:60:50: error: 'edad' undeclared (first use in this function)
+   60 |    anchoColumnasTexto,nombre,anchoColumnasNumero,edad,
+      |                                                  ^~~~
+..\src\controller.c:61:23: error: 'posicion' undeclared (first use in this function)
+   61 |    anchoColumnasTexto,posicion,anchoColumnasTexto,nacionalidad,
+      |                       ^~~~~~~~
+..\src\controller.c:61:51: error: 'nacionalidad' undeclared (first use in this function)
+   61 |    anchoColumnasTexto,posicion,anchoColumnasTexto,nacionalidad,
+      |                                                   ^~~~~~~~~~~~
+..\src\controller.c:62:24: error: 'seleccion' undeclared (first use in this function)
+   62 |    anchoColumnasTexto, seleccion);
+      |                        ^~~~~~~~~
+..\src\controller.c:45:10: warning: unused variable 'user' [-Wunused-variable]
+   45 |    char* user /*= NULL*/;
+      |          ^~~~
+..\src\controller.c: In function 'controller_listarPosts':
+..\src\controller.c:83:5: warning: implicit declaration of function 'controller_listarJugador'; did you mean 'controller_listarPosts'? [-Wimplicit-function-declaration]
+   83 |     controller_listarJugador(pArrayListJugador,i);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+      |     controller_listarPosts
+09:31:20 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\post.o" "..\\src\\post.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'controller_listarPost':
+..\src\controller.c:53:4: warning: implicit declaration of function 'post_getLikes'; did you mean 'post_setLikes'? [-Wimplicit-function-declaration]
+   53 |    post_getLikes(postAListar,&likes);
+      |    ^~~~~~~~~~~~~
+      |    post_setLikes
+..\src\controller.c:54:4: warning: implicit declaration of function 'post_getDislikes'; did you mean 'post_setDislikes'? [-Wimplicit-function-declaration]
+   54 |    post_getDislikes(postAListar,&dislikes);
+      |    ^~~~~~~~~~~~~~~~
+      |    post_setDislikes
+..\src\controller.c:55:4: warning: implicit declaration of function 'post_getFollowers'; did you mean 'post_setFollowers'? [-Wimplicit-function-declaration]
+   55 |    post_getFollowers(postAListar,&followers);
+      |    ^~~~~~~~~~~~~~~~~
+      |    post_setFollowers
+..\src\controller.c:60:23: error: 'nombre' undeclared (first use in this function)
+   60 |    anchoColumnasTexto,nombre,anchoColumnasNumero,edad,
+      |                       ^~~~~~
+..\src\controller.c:60:23: note: each undeclared identifier is reported only once for each function it appears in
+..\src\controller.c:60:50: error: 'edad' undeclared (first use in this function)
+   60 |    anchoColumnasTexto,nombre,anchoColumnasNumero,edad,
+      |                                                  ^~~~
+..\src\controller.c:61:23: error: 'posicion' undeclared (first use in this function)
+   61 |    anchoColumnasTexto,posicion,anchoColumnasTexto,nacionalidad,
+      |                       ^~~~~~~~
+..\src\controller.c:61:51: error: 'nacionalidad' undeclared (first use in this function)
+   61 |    anchoColumnasTexto,posicion,anchoColumnasTexto,nacionalidad,
+      |                                                   ^~~~~~~~~~~~
+..\src\controller.c:62:24: error: 'seleccion' undeclared (first use in this function)
+   62 |    anchoColumnasTexto, seleccion);
+      |                        ^~~~~~~~~
+..\src\controller.c:45:10: warning: unused variable 'user' [-Wunused-variable]
+   45 |    char* user /*= NULL*/;
+      |          ^~~~
+..\src\controller.c: In function 'controller_listarPosts':
+..\src\controller.c:83:5: warning: implicit declaration of function 'controller_listarJugador'; did you mean 'controller_listarPosts'? [-Wimplicit-function-declaration]
+   83 |     controller_listarJugador(pArrayListJugador,i);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+      |     controller_listarPosts
+09:31:59 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'controller_listarPost':
+..\src\controller.c:52:4: warning: implicit declaration of function 'post_getUser'; did you mean 'post_setUser'? [-Wimplicit-function-declaration]
+   52 |    post_getUser(postAListar,&user);
+      |    ^~~~~~~~~~~~
+      |    post_setUser
+..\src\controller.c:54:4: warning: implicit declaration of function 'post_getLikes'; did you mean 'post_setLikes'? [-Wimplicit-function-declaration]
+   54 |    post_getLikes(postAListar,&likes);
+      |    ^~~~~~~~~~~~~
+      |    post_setLikes
+..\src\controller.c:55:4: warning: implicit declaration of function 'post_getDislikes'; did you mean 'post_setDislikes'? [-Wimplicit-function-declaration]
+   55 |    post_getDislikes(postAListar,&dislikes);
+      |    ^~~~~~~~~~~~~~~~
+      |    post_setDislikes
+..\src\controller.c:56:4: warning: implicit declaration of function 'post_getFollowers'; did you mean 'post_setFollowers'? [-Wimplicit-function-declaration]
+   56 |    post_getFollowers(postAListar,&followers);
+      |    ^~~~~~~~~~~~~~~~~
+      |    post_setFollowers
+..\src\controller.c:61:23: error: 'nombre' undeclared (first use in this function)
+   61 |    anchoColumnasTexto,nombre,anchoColumnasNumero,edad,
+      |                       ^~~~~~
+..\src\controller.c:61:23: note: each undeclared identifier is reported only once for each function it appears in
+..\src\controller.c:61:50: error: 'edad' undeclared (first use in this function)
+   61 |    anchoColumnasTexto,nombre,anchoColumnasNumero,edad,
+      |                                                  ^~~~
+..\src\controller.c:62:23: error: 'posicion' undeclared (first use in this function)
+   62 |    anchoColumnasTexto,posicion,anchoColumnasTexto,nacionalidad,
+      |                       ^~~~~~~~
+..\src\controller.c:62:51: error: 'nacionalidad' undeclared (first use in this function)
+   62 |    anchoColumnasTexto,posicion,anchoColumnasTexto,nacionalidad,
+      |                                                   ^~~~~~~~~~~~
+..\src\controller.c:63:24: error: 'seleccion' undeclared (first use in this function)
+   63 |    anchoColumnasTexto, seleccion);
+      |                        ^~~~~~~~~
+..\src\controller.c: In function 'controller_listarPosts':
+..\src\controller.c:84:5: warning: implicit declaration of function 'controller_listarJugador'; did you mean 'controller_listarPosts'? [-Wimplicit-function-declaration]
+   84 |     controller_listarJugador(pArrayListJugador,i);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+      |     controller_listarPosts
+09:32:55 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'controller_listarPost':
+..\src\controller.c:61:23: error: 'nombre' undeclared (first use in this function)
+   61 |    anchoColumnasTexto,nombre,anchoColumnasNumero,edad,
+      |                       ^~~~~~
+..\src\controller.c:61:23: note: each undeclared identifier is reported only once for each function it appears in
+..\src\controller.c:61:50: error: 'edad' undeclared (first use in this function)
+   61 |    anchoColumnasTexto,nombre,anchoColumnasNumero,edad,
+      |                                                  ^~~~
+..\src\controller.c:62:23: error: 'posicion' undeclared (first use in this function)
+   62 |    anchoColumnasTexto,posicion,anchoColumnasTexto,nacionalidad,
+      |                       ^~~~~~~~
+..\src\controller.c:62:51: error: 'nacionalidad' undeclared (first use in this function)
+   62 |    anchoColumnasTexto,posicion,anchoColumnasTexto,nacionalidad,
+      |                                                   ^~~~~~~~~~~~
+..\src\controller.c:63:24: error: 'seleccion' undeclared (first use in this function)
+   63 |    anchoColumnasTexto, seleccion);
+      |                        ^~~~~~~~~
+..\src\controller.c: In function 'controller_listarPosts':
+..\src\controller.c:84:5: warning: implicit declaration of function 'controller_listarJugador'; did you mean 'controller_listarPosts'? [-Wimplicit-function-declaration]
+   84 |     controller_listarJugador(pArrayListJugador,i);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+      |     controller_listarPosts
+09:34:44 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\post.o" "..\\src\\post.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:35:35 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:36:28 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_postFromText':
+..\src\parser.c:14:17: warning: variable 'cantidad' set but not used [-Wunused-but-set-variable]
+   14 |  int retorno=-1,cantidad;
+      |                 ^~~~~~~~
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:37:36 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:38:10 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:38:35 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:39:58 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:41:42 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:42:14 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:43:11 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file 2do parcial.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:43:13 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:44:03 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:45:27 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:45:47 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file 2do parcial.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:45:48 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:46:13 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file 2do parcial.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:46:14 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:46:38 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:46:50 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:47:03 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:47:17 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:48:17 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:49:05 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:49:20 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:49:39 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:50:23 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:50:56 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+09:52:20 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:52:38 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:53:16 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+..\src\2do parcial.c: In function 'main':
+..\src\2do parcial.c:20:6: warning: unused variable 'flagArchivo' [-Wunused-variable]
+   20 |  int flagArchivo=0;
+      |      ^~~~~~~~~~~
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:53:21 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:55:53 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'map':
+..\src\controller.c:101:6: warning: unused variable 'TAM' [-Wunused-variable]
+  101 |  int TAM=ll_len(list);
+      |      ^~~
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+09:58:11 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'map':
+..\src\controller.c:104:9: warning: unused variable 'postAModificar' [-Wunused-variable]
+  104 |   Post* postAModificar=ll_get(list, i);
+      |         ^~~~~~~~~~~~~~
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:04:44 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:05:19 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+10:14:53 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'guardarMejoresPosteos':
+..\src\controller.c:141:28: warning: passing argument 2 of 'post_getLikes' makes pointer from integer without a cast [-Wint-conversion]
+  141 |     post_getLikes(postAux, likes);
+      |                            ^~~~~
+      |                            |
+      |                            int
+In file included from ..\src\controller.c:10:
+..\src\post.h:30:35: note: expected 'int *' but argument is of type 'int'
+   30 | int post_getLikes(Post* this,int* likes);
+      |                              ~~~~~^~~~~
+..\src\controller.c:142:31: warning: passing argument 2 of 'post_getDislikes' makes pointer from integer without a cast [-Wint-conversion]
+  142 |     post_getDislikes(postAux, disLikes);
+      |                               ^~~~~~~~
+      |                               |
+      |                               int
+In file included from ..\src\controller.c:10:
+..\src\post.h:26:38: note: expected 'int *' but argument is of type 'int'
+   26 | int post_getDislikes(Post* this,int* dislikes);
+      |                                 ~~~~~^~~~~~~~
+..\src\controller.c: At top level:
+..\src\controller.c:178:4: warning: "/*" within comment [-Wcomment]
+  178 |    /*if(cantidad<6){
+      |     
+..\src\controller.c: In function 'guardarMejoresPosteos':
+..\src\controller.c:141:5: warning: 'likes' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  141 |     post_getLikes(postAux, likes);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\controller.c:142:5: warning: 'disLikes' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  142 |     post_getDislikes(postAux, disLikes);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:15:04 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c:178:4: warning: "/*" within comment [-Wcomment]
+  178 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:16:34 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+..\src\2do parcial.c: In function 'main':
+..\src\2do parcial.c:39:5: warning: implicit declaration of function 'guardarMejoresPosteos' [-Wimplicit-function-declaration]
+   39 |     guardarMejoresPosteos(listaPosts,"mejoresPosts.csv");
+      |     ^~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c:180:4: warning: "/*" within comment [-Wcomment]
+  180 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:16:55 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+10:17:45 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c:180:4: warning: "/*" within comment [-Wcomment]
+  180 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+10:18:29 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c:180:4: warning: "/*" within comment [-Wcomment]
+  180 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+Info: Nothing to build for 2do parcial
+10:21:25 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'guardarMejoresPosteos':
+..\src\controller.c:144:27: warning: passing argument 2 of 'post_getUser' from incompatible pointer type [-Wincompatible-pointer-types]
+  144 |     post_getUser(postAux, user);
+      |                           ^~~~
+      |                           |
+      |                           char *
+In file included from ..\src\controller.c:10:
+..\src\post.h:38:36: note: expected 'char **' but argument is of type 'char *'
+   38 | int post_getUser(Post* this,char** user);
+      |                             ~~~~~~~^~~~
+..\src\controller.c: At top level:
+..\src\controller.c:181:4: warning: "/*" within comment [-Wcomment]
+  181 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:21:35 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'guardarMejoresPosteos':
+..\src\controller.c:127:18: warning: initialization of 'char **' from incompatible pointer type 'char *' [-Wincompatible-pointer-types]
+  127 |    char** user = (char*)malloc(sizeof(char)*30);
+      |                  ^
+..\src\controller.c:155:22: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char **' [-Wformat=]
+  155 |      fprintf(f, "%d,%s,%s,%s,%s\n", id, user, likesStr, disLikesStr,followersStr);
+      |                     ~^                  ~~~~
+      |                      |                  |
+      |                      char *             char **
+..\src\controller.c: At top level:
+..\src\controller.c:181:4: warning: "/*" within comment [-Wcomment]
+  181 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+10:23:14 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_postFromText':
+..\src\parser.c:14:17: warning: variable 'cantidad' set but not used [-Wunused-but-set-variable]
+   14 |  int retorno=-1,cantidad;
+      |                 ^~~~~~~~
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+10:24:00 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_postFromText':
+..\src\parser.c:27:48: error: expected ';' before 'unPost'
+   27 |      bufferPost[2],bufferPost[3],bufferPost[4])/*fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n]\n",bufferPost[0],bufferPost[1],
+      |                                                ^
+      |                                                ;
+......
+   38 |     unPost=post_newParametros(bufferPost[0],bufferPost[1],bufferPost[2],
+      |     ~~~~~~                                      
+..\src\parser.c:14:17: warning: variable 'cantidad' set but not used [-Wunused-but-set-variable]
+   14 |  int retorno=-1,cantidad;
+      |                 ^~~~~~~~
+10:24:07 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_postFromText':
+..\src\parser.c:14:17: warning: variable 'cantidad' set but not used [-Wunused-but-set-variable]
+   14 |  int retorno=-1,cantidad;
+      |                 ^~~~~~~~
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+10:24:24 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_postFromText':
+..\src\parser.c:14:17: warning: variable 'cantidad' set but not used [-Wunused-but-set-variable]
+   14 |  int retorno=-1,cantidad;
+      |                 ^~~~~~~~
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+10:25:44 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+10:26:34 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:27:36 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'guardarMejoresPosteos':
+..\src\controller.c:127:18: warning: initialization of 'char **' from incompatible pointer type 'char *' [-Wincompatible-pointer-types]
+  127 |    char** user = (char*)malloc(sizeof(char)*30);
+      |                  ^
+..\src\controller.c:154:22: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char **' [-Wformat=]
+  154 |      fprintf(f, "%s,%s,%s,%s,%s\n", idStr, user, likesStr, disLikesStr,followersStr);
+      |                     ~^                     ~~~~
+      |                      |                     |
+      |                      char *                char **
+..\src\controller.c: At top level:
+..\src\controller.c:181:4: warning: "/*" within comment [-Wcomment]
+  181 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:28:11 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c:181:4: warning: "/*" within comment [-Wcomment]
+  181 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+10:29:16 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c:181:4: warning: "/*" within comment [-Wcomment]
+  181 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:29:46 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c:181:4: warning: "/*" within comment [-Wcomment]
+  181 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:30:04 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c:181:4: warning: "/*" within comment [-Wcomment]
+  181 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:30:14 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c:181:4: warning: "/*" within comment [-Wcomment]
+  181 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:30:26 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c:181:4: warning: "/*" within comment [-Wcomment]
+  181 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:30:38 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c:181:4: warning: "/*" within comment [-Wcomment]
+  181 |    /*if(cantidad<6){
+      |     
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:33:09 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+10:33:45 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+10:36:04 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'map':
+..\src\controller.c:105:32: error: too many arguments to function 'rand'
+  105 |   post_setLikes(postAModificar,rand(600,5000));
+      |                                ^~~~
+In file included from ..\src\controller.c:8:
+c:\mingw\include\stdlib.h:522:38: note: declared here
+  522 | _CRTIMP __cdecl __MINGW_NOTHROW  int rand (void);
+      |                                      ^~~~
+..\src\controller.c:106:35: error: too many arguments to function 'rand'
+  106 |   post_setDislikes(postAModificar,rand(300,3500));
+      |                                   ^~~~
+In file included from ..\src\controller.c:8:
+c:\mingw\include\stdlib.h:522:38: note: declared here
+  522 | _CRTIMP __cdecl __MINGW_NOTHROW  int rand (void);
+      |                                      ^~~~
+..\src\controller.c:107:36: error: too many arguments to function 'rand'
+  107 |   post_setFollowers(postAModificar,rand(10000,20000));
+      |                                    ^~~~
+In file included from ..\src\controller.c:8:
+c:\mingw\include\stdlib.h:522:38: note: declared here
+  522 | _CRTIMP __cdecl __MINGW_NOTHROW  int rand (void);
+      |                                      ^~~~
+10:36:39 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'map':
+..\src\controller.c:105:38: error: expected ')' before numeric constant
+  105 |   post_setLikes(postAModificar,rand()600,5000);
+      |                                      ^~~
+      |                                      )
+..\src\controller.c:106:35: error: too many arguments to function 'rand'
+  106 |   post_setDislikes(postAModificar,rand(300,3500));
+      |                                   ^~~~
+In file included from ..\src\controller.c:8:
+c:\mingw\include\stdlib.h:522:38: note: declared here
+  522 | _CRTIMP __cdecl __MINGW_NOTHROW  int rand (void);
+      |                                      ^~~~
+..\src\controller.c:107:36: error: too many arguments to function 'rand'
+  107 |   post_setFollowers(postAModificar,rand(10000,20000));
+      |                                    ^~~~
+In file included from ..\src\controller.c:8:
+c:\mingw\include\stdlib.h:522:38: note: declared here
+  522 | _CRTIMP __cdecl __MINGW_NOTHROW  int rand (void);
+      |                                      ^~~~
+10:38:17 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'map':
+..\src\controller.c:102:22: error: too many arguments to function 'rand'
+  102 |  int aleatorioLikes= rand(600,5000);
+      |                      ^~~~
+In file included from ..\src\controller.c:8:
+c:\mingw\include\stdlib.h:522:38: note: declared here
+  522 | _CRTIMP __cdecl __MINGW_NOTHROW  int rand (void);
+      |                                      ^~~~
+..\src\controller.c:106:35: error: too many arguments to function 'rand'
+  106 |   post_setDislikes(postAModificar,rand(300,3500));
+      |                                   ^~~~
+In file included from ..\src\controller.c:8:
+c:\mingw\include\stdlib.h:522:38: note: declared here
+  522 | _CRTIMP __cdecl __MINGW_NOTHROW  int rand (void);
+      |                                      ^~~~
+..\src\controller.c:107:36: error: too many arguments to function 'rand'
+  107 |   post_setFollowers(postAModificar,rand(10000,20000));
+      |                                    ^~~~
+In file included from ..\src\controller.c:8:
+c:\mingw\include\stdlib.h:522:38: note: declared here
+  522 | _CRTIMP __cdecl __MINGW_NOTHROW  int rand (void);
+      |                                      ^~~~
+10:38:52 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'map':
+..\src\controller.c:102:28: error: expected ',' or ';' before numeric constant
+  102 |  int aleatorioLikes= rand()5000;
+      |                            ^~~~
+..\src\controller.c:106:35: error: too many arguments to function 'rand'
+  106 |   post_setDislikes(postAModificar,rand(300,3500));
+      |                                   ^~~~
+In file included from ..\src\controller.c:8:
+c:\mingw\include\stdlib.h:522:38: note: declared here
+  522 | _CRTIMP __cdecl __MINGW_NOTHROW  int rand (void);
+      |                                      ^~~~
+..\src\controller.c:107:36: error: too many arguments to function 'rand'
+  107 |   post_setFollowers(postAModificar,rand(10000,20000));
+      |                                    ^~~~
+In file included from ..\src\controller.c:8:
+c:\mingw\include\stdlib.h:522:38: note: declared here
+  522 | _CRTIMP __cdecl __MINGW_NOTHROW  int rand (void);
+      |                                      ^~~~
+10:38:56 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+..\src\controller.c: In function 'map':
+..\src\controller.c:106:35: error: too many arguments to function 'rand'
+  106 |   post_setDislikes(postAModificar,rand(300,3500));
+      |                                   ^~~~
+In file included from ..\src\controller.c:8:
+c:\mingw\include\stdlib.h:522:38: note: declared here
+  522 | _CRTIMP __cdecl __MINGW_NOTHROW  int rand (void);
+      |                                      ^~~~
+..\src\controller.c:107:36: error: too many arguments to function 'rand'
+  107 |   post_setFollowers(postAModificar,rand(10000,20000));
+      |                                    ^~~~
+In file included from ..\src\controller.c:8:
+c:\mingw\include\stdlib.h:522:38: note: declared here
+  522 | _CRTIMP __cdecl __MINGW_NOTHROW  int rand (void);
+      |                                      ^~~~
+10:42:56 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+10:44:12 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+10:45:27 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 
+Info: Nothing to build for 2do parcial
+Info: Nothing to build for 2do parcial
+10:53:50 **** Incremental Build of configuration Debug for project 2do parcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\controller.o" "..\\src\\controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do parcial.o" "..\\src\\2do parcial.c" 
+gcc -o "2do parcial.exe" "src\\2do parcial.o" "src\\LinkedList.o" "src\\controller.o" "src\\parser.o" "src\\post.o" "src\\utn.o" 

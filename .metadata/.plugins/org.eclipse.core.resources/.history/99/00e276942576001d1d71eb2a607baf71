@@ -1,0 +1,20 @@
+/*
+ * post.h
+ *
+ *  Created on: 7 dic. 2022
+ *      Author: ayala
+ */
+
+#ifndef POST_H_
+#define POST_H_
+
+typedef struct
+{
+	int id;
+	char user[30];
+	int likes;
+	int dislikes;
+	int followers;
+}Seleccion;
+
+#endif /* POST_H_ */

@@ -1,0 +1,25 @@
+/*
+ * post.c
+ *
+ *  Created on: 7 dic. 2022
+ *      Author: ayala
+ */
+
+
+int post_setId(Post* this,int id){
+	this->id = id;
+	return 1;
+}
+
+
+Post* post_newParametros(char* idStr,char* nombreCompletoStr,char* edadStr, char* posicionStr, char* nacionalidadStr, char* idSelccionStr){
+
+	Post* pPost = (Post*)malloc(sizeof(Post));
+	jug_setId(pPost, atoi(idStr));
+	jug_setNombreCompleto(pPost, nombreCompletoStr);
+	jug_setEdad(pJugador, atoi(edadStr));
+	jug_setPosicion(pJugador, posicionStr);
+	jug_setNacionalidad(pJugador, nacionalidadStr);
+	jug_setIdSeleccion(pJugador, atoi(idSelccionStr));
+	return pJugador;
+}
